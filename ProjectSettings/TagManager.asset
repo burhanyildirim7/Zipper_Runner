@@ -8,6 +8,28 @@ TagManager:
   - LevelController
   - UIController
   - Elmas
+  - OrtaGateGiris
+  - OrtaGateOrta
+  - OrtaGateCikis
+  - IyiToplanabilir
+  - KotuToplanabilir
+  - IyiGateGiris
+  - IyiGateOrta
+  - IyiGateCikis
+  - KotuGateGiris
+  - KotuGateOrta
+  - KotuGateCikis
+  - FinishCizgisi
+  - X1Collider
+  - X2Collider
+  - X3Collider
+  - X4Collider
+  - X5Collider
+  - X6Collider
+  - X7Collider
+  - X8Collider
+  - X9Collider
+  - X10Collider
   layers:
   - Default
   - TransparentFX
