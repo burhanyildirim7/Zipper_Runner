@@ -460,7 +460,7 @@ public class PlayerController : MonoBehaviour
         _karakterPaketi.transform.position = new Vector3(0, 0, 0);
         _karakterPaketi.transform.rotation = Quaternion.Euler(0, 0, 0);
         _player = GameObject.FindWithTag("Player");
-        _player.transform.localPosition = new Vector3(0, 0.5f, 0);
+        _player.transform.localPosition = new Vector3(0, 0.25f, 0);
     }
 
 

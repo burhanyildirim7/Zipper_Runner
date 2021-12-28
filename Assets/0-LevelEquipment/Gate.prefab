@@ -11284,6 +11284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 014 Gift_Box
       objectReference: {fileID: 0}
+    - target: {fileID: 5383322966512213757, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5383322966512501469, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11358,6 +11362,10 @@ PrefabInstance:
     - target: {fileID: 4450836156940773791, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
       propertyPath: m_Name
       value: grape
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450836156940773791, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450836156940875199, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
       propertyPath: m_RootOrder
@@ -11486,6 +11494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cake
       objectReference: {fileID: 0}
+    - target: {fileID: 5278324882932605933, guid: 45dbf2c15f8b441d6aa265abec71b22a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dbf2c15f8b441d6aa265abec71b22a, type: 3}
 --- !u!4 &4751502908816637681 stripped
@@ -11512,6 +11524,10 @@ PrefabInstance:
     - target: {fileID: 9220629701215815747, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
       propertyPath: m_Name
       value: 084 Hen
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220629701215815747, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9220629701215982691, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
       propertyPath: m_RootOrder
@@ -11592,6 +11608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChatteringTeeth_LOD1
       objectReference: {fileID: 0}
+    - target: {fileID: 2106087127211114286, guid: 43ecf19bb7b0f47f88d96020a1336ad5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106087127211533070, guid: 43ecf19bb7b0f47f88d96020a1336ad5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -11666,6 +11686,10 @@ PrefabInstance:
     - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_Name
       value: Drill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011496336782, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_RootOrder
@@ -11745,6 +11769,10 @@ PrefabInstance:
     - target: {fileID: 1008849628155272, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
       propertyPath: m_Name
       value: Multitool
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008849628155272, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4403630041476490, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
       propertyPath: m_RootOrder
@@ -11877,6 +11905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: waffle
       objectReference: {fileID: 0}
+    - target: {fileID: 5432501550053800130, guid: dfa9568339187441e93771a8000a62ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfa9568339187441e93771a8000a62ca, type: 3}
 --- !u!1 &7720739970372601231 stripped
@@ -11952,6 +11984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 5780925129265994720, guid: 7108599b0dc874654ad1421736c02487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7108599b0dc874654ad1421736c02487, type: 3}
 --- !u!1 &8196640870178064560 stripped
@@ -11974,6 +12010,10 @@ PrefabInstance:
     - target: {fileID: 1008849628155272, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
       propertyPath: m_Name
       value: Multitool
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008849628155272, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4403630041476490, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
       propertyPath: m_RootOrder
@@ -12058,6 +12098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 084 Hen
       objectReference: {fileID: 0}
+    - target: {fileID: 9220629701215815747, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9220629701215982691, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12136,6 +12180,10 @@ PrefabInstance:
     - target: {fileID: 1008849628155272, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
       propertyPath: m_Name
       value: Multitool
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008849628155272, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4403630041476490, guid: f23dd792275d48a40b2ddb16f9db9b38, type: 3}
       propertyPath: m_RootOrder
@@ -12216,6 +12264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 014 Gift_Box
       objectReference: {fileID: 0}
+    - target: {fileID: 5383322966512213757, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5383322966512501469, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12290,6 +12342,10 @@ PrefabInstance:
     - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_Name
       value: Drill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011496336782, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_RootOrder
@@ -12370,6 +12426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 5 Side Diamond
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010140368820, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12445,6 +12505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChatteringTeeth_LOD1
       objectReference: {fileID: 0}
+    - target: {fileID: 2106087127211114286, guid: 43ecf19bb7b0f47f88d96020a1336ad5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106087127211533070, guid: 43ecf19bb7b0f47f88d96020a1336ad5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -12519,6 +12583,10 @@ PrefabInstance:
     - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_Name
       value: 5 Side Diamond
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010140368820, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_RootOrder
@@ -12647,6 +12715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hambuger
       objectReference: {fileID: 0}
+    - target: {fileID: 3726201047500076603, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
 --- !u!4 &387200323424048888 stripped
@@ -12669,6 +12741,10 @@ PrefabInstance:
     - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_Name
       value: Drill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012695253110, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011496336782, guid: f5a2d19d564785d45a6207078113bcaa, type: 3}
       propertyPath: m_RootOrder
@@ -12753,6 +12829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 084 Hen
       objectReference: {fileID: 0}
+    - target: {fileID: 9220629701215815747, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9220629701215982691, guid: 01612f0f2b86b488cb860cef7526c30b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12832,6 +12912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChatteringTeeth_LOD1
       objectReference: {fileID: 0}
+    - target: {fileID: 2106087127211114286, guid: 43ecf19bb7b0f47f88d96020a1336ad5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2106087127211533070, guid: 43ecf19bb7b0f47f88d96020a1336ad5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -12906,6 +12990,10 @@ PrefabInstance:
     - target: {fileID: 4450836156940773791, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
       propertyPath: m_Name
       value: grape
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450836156940773791, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450836156940875199, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
       propertyPath: m_RootOrder
@@ -13034,6 +13122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hambuger
       objectReference: {fileID: 0}
+    - target: {fileID: 3726201047500076603, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
 --- !u!1 &8707277606692625231 stripped
@@ -13108,6 +13200,10 @@ PrefabInstance:
     - target: {fileID: 5780925129265994720, guid: 7108599b0dc874654ad1421736c02487, type: 3}
       propertyPath: m_Name
       value: pumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780925129265994720, guid: 7108599b0dc874654ad1421736c02487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7108599b0dc874654ad1421736c02487, type: 3}
@@ -13184,6 +13280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: waffle
       objectReference: {fileID: 0}
+    - target: {fileID: 5432501550053800130, guid: dfa9568339187441e93771a8000a62ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfa9568339187441e93771a8000a62ca, type: 3}
 --- !u!4 &1723874706538946719 stripped
@@ -13258,6 +13358,10 @@ PrefabInstance:
     - target: {fileID: 5432501550053800130, guid: dfa9568339187441e93771a8000a62ca, type: 3}
       propertyPath: m_Name
       value: waffle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5432501550053800130, guid: dfa9568339187441e93771a8000a62ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfa9568339187441e93771a8000a62ca, type: 3}
@@ -13334,6 +13438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cake
       objectReference: {fileID: 0}
+    - target: {fileID: 5278324882932605933, guid: 45dbf2c15f8b441d6aa265abec71b22a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dbf2c15f8b441d6aa265abec71b22a, type: 3}
 --- !u!1 &3256978646961382876 stripped
@@ -13356,6 +13464,10 @@ PrefabInstance:
     - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_Name
       value: 5 Side Diamond
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010880751780, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010140368820, guid: c3c0707254334a64ca8198f7486e977d, type: 3}
       propertyPath: m_RootOrder
@@ -13484,6 +13596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cake
       objectReference: {fileID: 0}
+    - target: {fileID: 5278324882932605933, guid: 45dbf2c15f8b441d6aa265abec71b22a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45dbf2c15f8b441d6aa265abec71b22a, type: 3}
 --- !u!4 &2709613681912163531 stripped
@@ -13558,6 +13674,10 @@ PrefabInstance:
     - target: {fileID: 3726201047500076603, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
       propertyPath: m_Name
       value: Hambuger
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726201047500076603, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f95a579038e14cada6392915fec9e29, type: 3}
@@ -13634,6 +13754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 5780925129265994720, guid: 7108599b0dc874654ad1421736c02487, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7108599b0dc874654ad1421736c02487, type: 3}
 --- !u!4 &2958494104455681025 stripped
@@ -13656,6 +13780,10 @@ PrefabInstance:
     - target: {fileID: 5383322966512213757, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
       propertyPath: m_Name
       value: 014 Gift_Box
+      objectReference: {fileID: 0}
+    - target: {fileID: 5383322966512213757, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5383322966512501469, guid: daa5efe5de0c842f592546f440921e4c, type: 3}
       propertyPath: m_RootOrder
@@ -13731,6 +13859,10 @@ PrefabInstance:
     - target: {fileID: 4450836156940773791, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
       propertyPath: m_Name
       value: grape
+      objectReference: {fileID: 0}
+    - target: {fileID: 4450836156940773791, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450836156940875199, guid: ba7730f0f5df54949b77570de7a1c88e, type: 3}
       propertyPath: m_RootOrder
