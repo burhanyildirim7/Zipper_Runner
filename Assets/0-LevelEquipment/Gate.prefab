@@ -1559,8 +1559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _iyiGate: 0
-  _ortaGate: 0
-  _kotuGate: 1
+  _ortaGate: 1
+  _kotuGate: 0
   _iyiGateObjects:
   - {fileID: 3460352651098500089}
   - {fileID: 3751127917022912896}
@@ -8202,9 +8202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c89c560af5a46d8b06c5bd30660b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _iyiGate: 0
+  _iyiGate: 1
   _ortaGate: 0
-  _kotuGate: 1
+  _kotuGate: 0
   _iyiGateObjects:
   - {fileID: 5419730961339512080}
   - {fileID: 7565958102374456863}
