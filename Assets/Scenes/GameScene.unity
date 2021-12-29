@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4788496, g: 0.80017924, b: 0.8994595, a: 1}
+  m_IndirectSpecularColor: {r: 0.4770398, g: 0.79908794, b: 0.8987446, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1487,6 +1487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level4
       objectReference: {fileID: 0}
+    - target: {fileID: 4055949560256645404, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
 --- !u!4 &1126489189 stripped
@@ -1650,6 +1654,10 @@ PrefabInstance:
     - target: {fileID: 4055949560256645404, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
       propertyPath: m_Name
       value: Level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055949560256645404, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
@@ -1819,10 +1827,12 @@ MonoBehaviour:
   - {fileID: 1991094811}
   - {fileID: 1126489190}
   - {fileID: 2080181951}
-  _iyiToplanabilirDeger: 5
-  _kotuToplanabilirDeger: 5
+  _zipper: {fileID: 1269746521}
+  _iyiToplanabilirDeger: 1
+  _kotuToplanabilirDeger: 1
   _karakterPaketi: {fileID: 2018247884}
   _zipperLevelSlider: {fileID: 553806907}
+  _buyumeDegeri: 5
 --- !u!54 &1443049515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2125,6 +2135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 4055949560256645404, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
 --- !u!4 &1991094810 stripped
@@ -2147,6 +2161,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 38af4b4dc386448218c0150f111ea1f6, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38af4b4dc386448218c0150f111ea1f6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38af4b4dc386448218c0150f111ea1f6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38af4b4dc386448218c0150f111ea1f6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 38af4b4dc386448218c0150f111ea1f6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2442,6 +2468,10 @@ PrefabInstance:
     - target: {fileID: 4055949560256645404, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
       propertyPath: m_Name
       value: Level5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055949560256645404, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d187fad8dbbc94522b1c71d7de4846f7, type: 3}
@@ -5774,13 +5804,93 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1255195946276018600, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _cikart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1255195946276018600, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190628142527094042, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _topla
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190628142527094042, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545389629883258229, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _topla
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545389629883258229, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3339036474424487339, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _topla
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3339036474424487339, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185716749597732506, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _cikart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4185716749597732506, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983471345295348695, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _cikart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983471345295348695, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009729058153572149, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _cikart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009729058153572149, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590440421653280117, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _topla
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6590440421653280117, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719077015877224184, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _topla
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719077015877224184, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892288438258270279, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _cikart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892288438258270279, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
+      propertyPath: _kapiDegeri
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8670544980626900228, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
       propertyPath: m_Name
       value: Level1
       objectReference: {fileID: 0}
     - target: {fileID: 8670544980626900228, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8670544980626900229, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
       propertyPath: m_RootOrder

@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _zipperObjectList = new List<GameObject>();
 
+    [SerializeField] private GameObject _zipper;
+
     [SerializeField] private int _iyiToplanabilirDeger;
 
     [SerializeField] private int _kotuToplanabilirDeger;
@@ -15,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject _karakterPaketi;
 
     [SerializeField] private Slider _zipperLevelSlider;
+
+    [SerializeField] private int _buyumeDegeri;
 
     private int _elmasSayisi;
 
@@ -55,10 +59,16 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
+            _zipperLevel += _iyiToplanabilirDeger;
+
+            _zipper.transform.localScale += new Vector3(_buyumeDegeri, _buyumeDegeri, _buyumeDegeri);
+
+            //_zipperLevelSlider.value += _iyiToplanabilirDeger;
+
+            /*
             if (_zipperLevel < 100)
             {
-                _zipperLevel += _iyiToplanabilirDeger;
-                _zipperLevelSlider.value += _iyiToplanabilirDeger;
+               
 
                 if (_zipperLevel < 20)
                 {
@@ -146,6 +156,7 @@ public class PlayerController : MonoBehaviour
                 _zipperLevel = 100;
                 _zipperLevelSlider.value = 20;
             }
+            */
 
             Destroy(other.gameObject);
         }
@@ -153,10 +164,39 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
+            _zipperLevel -= _kotuToplanabilirDeger;
+
+            _zipper.transform.localScale -= new Vector3(_buyumeDegeri, _buyumeDegeri, _buyumeDegeri);
+
+            if (GameController._oyunuBeklet == false)
+            {
+                if (_zipper.transform.localScale.x <= 100)
+                {
+                    if (GameController._oyunAktif)
+                    {
+                        GameController._oyunAktif = false;
+                        Invoke("LoseScreenAc", 1f);
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+
+                }
+            }
+            else
+            {
+
+            }
+            //_zipperLevelSlider.value -= _kotuToplanabilirDeger;
+
+            /*
             if (_zipperLevel > 0)
             {
-                _zipperLevel -= _kotuToplanabilirDeger;
-                _zipperLevelSlider.value -= _kotuToplanabilirDeger;
+               
 
                 if (_zipperLevel < 20)
                 {
@@ -255,7 +295,7 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-
+            */
             //Destroy(other.gameObject);
         }
         else if (other.tag == "IyiGateGiris")
@@ -515,6 +555,7 @@ public class PlayerController : MonoBehaviour
         _karakterPaketi.transform.rotation = Quaternion.Euler(0, 0, 0);
         _player = GameObject.FindWithTag("Player");
         _player.transform.localPosition = new Vector3(0, 0.25f, 0);
+        _zipper.transform.localScale = new Vector3(100, 100, 100);
     }
 
 
