@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4770398, g: 0.79908794, b: 0.8987446, a: 1}
+  m_IndirectSpecularColor: {r: 0.4788496, g: 0.80017924, b: 0.8994595, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5804,93 +5804,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1255195946276018600, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _cikart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1255195946276018600, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190628142527094042, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _topla
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190628142527094042, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2545389629883258229, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _topla
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2545389629883258229, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339036474424487339, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _topla
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339036474424487339, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4185716749597732506, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _cikart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4185716749597732506, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983471345295348695, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _cikart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4983471345295348695, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5009729058153572149, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _cikart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5009729058153572149, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590440421653280117, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _topla
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590440421653280117, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7719077015877224184, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _topla
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7719077015877224184, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892288438258270279, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _cikart
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7892288438258270279, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
-      propertyPath: _kapiDegeri
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8670544980626900228, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
       propertyPath: m_Name
       value: Level1
       objectReference: {fileID: 0}
     - target: {fileID: 8670544980626900228, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8670544980626900229, guid: cd85b725336404dc3a4c58f74a058518, type: 3}
       propertyPath: m_RootOrder
