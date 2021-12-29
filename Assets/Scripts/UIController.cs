@@ -57,17 +57,17 @@ public class UIController : MonoBehaviour
 
     }
 
-  
+
     void Update()
     {
         _levelNumber = PlayerPrefs.GetInt("LevelNumber");
 
         _elmasSayisi = PlayerPrefs.GetInt("ElmasSayisi");
 
-       
+
         _levelText.text = "LEVEL " + (_levelNumber);
-        
-        
+
+
         _elmasText.text = _elmasSayisi.ToString();
     }
 
@@ -76,6 +76,7 @@ public class UIController : MonoBehaviour
         GameController._oyunAktif = true;
         _tapToStartPanel.SetActive(false);
         _gameScreenPanel.SetActive(true);
+        _levelSonuElmasSayisi = 0;
     }
 
     public void WinScreenPanelOpen()

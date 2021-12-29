@@ -53,6 +53,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "IyiToplanabilir")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel < 100)
             {
                 _zipperLevel += _iyiToplanabilirDeger;
@@ -147,8 +149,10 @@ public class PlayerController : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-        else if (other.tag == "KotuToplanabilir")
+        else if (other.tag == "DegersizEsya")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel > 0)
             {
                 _zipperLevel -= _kotuToplanabilirDeger;
@@ -239,12 +243,24 @@ public class PlayerController : MonoBehaviour
             {
                 _zipperLevel = 0;
                 _zipperLevelSlider.value = 0;
+
+                if (GameController._oyunAktif)
+                {
+                    GameController._oyunAktif = false;
+                    Invoke("LoseScreenAc", 1f);
+                }
+                else
+                {
+
+                }
+
             }
 
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
         else if (other.tag == "IyiGateGiris")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Time.timeScale = 0.5f;
             _player = GameObject.FindWithTag("Player");
             _player.transform.localPosition = new Vector3(-2, _player.transform.localPosition.y, _player.transform.localPosition.z);
@@ -253,16 +269,19 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "IyiGateOrta")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Debug.Log("IyiGateOrta");
         }
         else if (other.tag == "IyiGateCikis")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Time.timeScale = 1f;
             GameController._oyunuBeklet = false;
             Debug.Log("IyiGateCikis");
         }
         else if (other.tag == "OrtaGateGiris")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Time.timeScale = 0.5f;
             _player = GameObject.FindWithTag("Player");
             _player.transform.localPosition = new Vector3(0, _player.transform.localPosition.y, _player.transform.localPosition.z);
@@ -271,16 +290,19 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "OrtaGateOrta")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Debug.Log("OrtaGateOrta");
         }
         else if (other.tag == "OrtaGateCikis")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Time.timeScale = 1f;
             GameController._oyunuBeklet = false;
             Debug.Log("OrtaGateCikis");
         }
         else if (other.tag == "KotuGateGiris")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Time.timeScale = 0.5f;
             _player = GameObject.FindWithTag("Player");
             _player.transform.localPosition = new Vector3(2, _player.transform.localPosition.y, _player.transform.localPosition.z);
@@ -289,10 +311,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "KotuGateOrta")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Debug.Log("KotuGateOrta");
         }
         else if (other.tag == "KotuGateCikis")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
             Time.timeScale = 1f;
             GameController._oyunuBeklet = false;
             Debug.Log("KotuGateCikis");
@@ -307,9 +331,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X1Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel < 20)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 1);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -319,9 +346,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X2Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 10 && _zipperLevel < 20)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 2);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -331,9 +361,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X3Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 20 && _zipperLevel < 30)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 3);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -343,9 +376,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X4Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 30 && _zipperLevel < 40)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 4);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -355,9 +391,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X5Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 40 && _zipperLevel < 50)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 5);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -367,9 +406,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X6Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 50 && _zipperLevel < 60)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 6);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -379,9 +421,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X7Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 60 && _zipperLevel < 70)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 7);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -391,9 +436,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X8Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 70 && _zipperLevel < 80)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 8);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -403,9 +451,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X9Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 80 && _zipperLevel < 90)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 9);
                 Invoke("WinScreenAc", 1f);
             }
             else
@@ -415,9 +466,12 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.tag == "X10Collider")
         {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
             if (_zipperLevel >= 90)
             {
                 GameController._oyunAktif = false;
+                _uiController.LevelSonuElmasSayisi(_zipperLevel * 10);
                 Invoke("WinScreenAc", 1f);
             }
             else
