@@ -92,7 +92,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757226478427326243}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -189,7 +189,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613525457120120813}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 3391181486442450302}
   m_Layer: 0
   m_Name: KIRMIZIKAPI
-  m_TagString: Untagged
+  m_TagString: Kapi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,8 +508,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _topla: 0
   _cikart: 0
-  _carp: 0
-  _bol: 0
   _kapiDegeri: 0
 --- !u!1 &8476547948908282181
 GameObject:

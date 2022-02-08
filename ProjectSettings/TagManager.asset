@@ -30,6 +30,10 @@ TagManager:
   - X8Collider
   - X9Collider
   - X10Collider
+  - door
+  - DegersizEsya
+  - ENGEL
+  - Kapi
   layers:
   - Default
   - TransparentFX

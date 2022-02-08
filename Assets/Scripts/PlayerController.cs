@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private int _buyumeDegeri;
 
+    [SerializeField] private GameObject _engelEfekt;
+
     private int _elmasSayisi;
 
     private GameObject _player;
@@ -28,9 +30,12 @@ public class PlayerController : MonoBehaviour
 
     private int _toplananElmasSayisi;
 
-    private int _zipperLevel;
+    public static int _zipperLevel;
 
     private int _zipperNumber;
+
+    private int _oyunSonuZipperDeger;
+    private float _oyunSonuAzalmaDeger;
 
 
 
@@ -42,7 +47,21 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (GameController._oyunuBeklet && GameController._oyunAktif)
+        {
+            if (_zipper.transform.localScale.x > 100)
+            {
+                StartCoroutine("OyunSonuKuculme");
+            }
+            else
+            {
 
+            }
+
+        }
+    }
 
 
     private void OnTriggerEnter(Collider other)
@@ -167,6 +186,10 @@ public class PlayerController : MonoBehaviour
             _zipperLevel -= _kotuToplanabilirDeger;
 
             _zipper.transform.localScale -= new Vector3(_buyumeDegeri, _buyumeDegeri, _buyumeDegeri);
+
+            _engelEfekt.SetActive(true);
+
+            Invoke("EngelEfektKapat", 0.5f);
 
             if (GameController._oyunuBeklet == false)
             {
@@ -298,6 +321,52 @@ public class PlayerController : MonoBehaviour
             */
             //Destroy(other.gameObject);
         }
+        else if (other.tag == "Kapi")
+        {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+
+            if (other.gameObject.GetComponent<KapiScript>()._topla)
+            {
+                _zipper.transform.localScale += new Vector3(other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri, other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri, other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri);
+
+                _zipperLevel += _iyiToplanabilirDeger * other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
+            }
+            else if (other.gameObject.GetComponent<KapiScript>()._cikart)
+            {
+                _zipperLevel -= _kotuToplanabilirDeger * other.gameObject.GetComponent<KapiScript>()._kapiDegeri;
+
+                if (_zipper.transform.localScale.x - other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri < 100)
+                {
+                    if (GameController._oyunAktif)
+                    {
+                        GameController._oyunAktif = false;
+                        Invoke("LoseScreenAc", 1f);
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else
+                {
+                    _zipper.transform.localScale -= new Vector3(other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri, other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri, other.gameObject.GetComponent<KapiScript>()._kapiDegeri * _buyumeDegeri);
+                }
+
+            }
+            else
+            {
+
+            }
+        }
+        else if (other.tag == "IyiGateGiris")
+        {
+            MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
+            Time.timeScale = 0.5f;
+            _player = GameObject.FindWithTag("Player");
+            _player.transform.localPosition = new Vector3(-2, _player.transform.localPosition.y, _player.transform.localPosition.z);
+            GameController._oyunuBeklet = true;
+            Debug.Log("IyiGateGiris");
+        }
         else if (other.tag == "IyiGateGiris")
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
@@ -366,6 +435,11 @@ public class PlayerController : MonoBehaviour
             //Time.timeScale = 0.5f;
             _player = GameObject.FindWithTag("Player");
             _player.transform.localPosition = new Vector3(0, _player.transform.localPosition.y, _player.transform.localPosition.z);
+
+
+            _oyunSonuZipperDeger = (int)((_zipper.transform.localScale.x - 100) / 10);
+            _oyunSonuAzalmaDeger = (_oyunSonuZipperDeger / 10);
+
             GameController._oyunuBeklet = true;
             //Debug.Log("OrtaGateGiris");
         }
@@ -373,7 +447,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel < 20)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 1);
@@ -388,7 +462,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 10 && _zipperLevel < 20)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 2);
@@ -403,7 +477,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 20 && _zipperLevel < 30)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 3);
@@ -418,7 +492,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 30 && _zipperLevel < 40)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 4);
@@ -433,7 +507,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 40 && _zipperLevel < 50)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 5);
@@ -448,7 +522,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 50 && _zipperLevel < 60)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 6);
@@ -463,7 +537,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 60 && _zipperLevel < 70)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 7);
@@ -478,7 +552,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 70 && _zipperLevel < 80)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 8);
@@ -493,7 +567,7 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 80 && _zipperLevel < 90)
+            if (_zipper.transform.localScale.x <= 100)
             {
                 GameController._oyunAktif = false;
                 _uiController.LevelSonuElmasSayisi(_zipperLevel * 9);
@@ -508,21 +582,22 @@ public class PlayerController : MonoBehaviour
         {
             MoreMountains.NiceVibrations.MMVibrationManager.Haptic(MoreMountains.NiceVibrations.HapticTypes.MediumImpact);
 
-            if (_zipperLevel >= 90)
-            {
-                GameController._oyunAktif = false;
-                _uiController.LevelSonuElmasSayisi(_zipperLevel * 10);
-                Invoke("WinScreenAc", 1f);
-            }
-            else
-            {
 
-            }
+            GameController._oyunAktif = false;
+            _uiController.LevelSonuElmasSayisi(_zipperLevel * 10);
+            _zipper.transform.localScale = new Vector3(100, 100, 100);
+            Invoke("WinScreenAc", 1f);
+
         }
         else
         {
 
         }
+    }
+
+    private void EngelEfektKapat()
+    {
+        _engelEfekt.SetActive(false);
     }
 
     private void WinScreenAc()
@@ -536,13 +611,20 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    IEnumerator OyunSonuKuculme()
+    {
+        _zipper.transform.localScale -= new Vector3(0.75f, 0.75f, 0.75f);
+
+        yield return new WaitForSeconds(0.1f);
+    }
+
 
 
     public void LevelStart()
     {
         GameController._oyunuBeklet = false;
         _toplananElmasSayisi = 1;
-        _zipperLevel = 0;
+        _zipperLevel = 1;
         _zipperLevelSlider.value = 0;
         _zipperNumber = 0;
         _zipperObjectList[4].SetActive(false);
